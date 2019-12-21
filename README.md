@@ -8,5 +8,5 @@ and modifying the state of the device by processes running on each
 device.
 
 This simple package shows all the values returned by the
-/api/v1/status API call. Right now this is still experimental
+`/api/v1/status` API call. Right now this is still experimental
 and in the future the API will be documented on info-beamer.com.

@@ -1,5 +1,7 @@
 {
     "name": "Shows internal API status values",
     "author": "Florian Wesch <fw@info-beamer.com>",
-    "desc": "Queries the internal web API and shows current device status"
+    "desc": "Queries the internal web API and shows current device status",
+    "repository": "https://github.com/info-beamer/package-device-api",
+    "platforms": ["pi/epoch-1", "pi-4"]
 }
