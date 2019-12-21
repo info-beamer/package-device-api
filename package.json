@@ -1,0 +1,5 @@
+{
+    "name": "Shows internal API status values",
+    "author": "Florian Wesch <fw@info-beamer.com>",
+    "desc": "Queries the internal web API and shows current device status"
+}

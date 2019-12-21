@@ -1,0 +1,19 @@
+#!/usr/bin/python
+import socket, requests, time, traceback
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+def send_status(status):
+    sock.sendto('root/status:%s' % (status,), ('127.0.0.1', 4444))
+
+def update_status():
+    r = requests.get("http://127.0.0.1:81/api/v1/status", timeout=1)
+    r.raise_for_status()
+    send_status(r.content)
+
+if __name__ == "__main__":
+    try:
+        update_status()
+    except KeyboardInterrupt:
+        raise
+    except:
+        traceback.print_exc()
+    time.sleep(1)
